@@ -20,6 +20,7 @@ class Solution:
                 r-=1
             if cpyStr[l] in vowels and cpyStr[r] in vowels:
                 cpyStr[l], cpyStr[r] = cpyStr[r], cpyStr[l]
+                l, r = l+1, r-1
 
         return ''.join(cpyStr)
 # @lc code=end
